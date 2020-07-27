@@ -1,0 +1,31 @@
+
+<%- include("../partials/header.ejs") %> 
+
+
+
+<div class="container text-center">
+
+
+<h1 class="addTitle text-center">Edit your campground <%= campground.name %> </h1>
+
+
+<form  action="/campgrounds/<%= campground._id %>?_method=PUT" method="POST">
+<div class="container">
+<input class="borde-bottom" type="text" name="campground[name]" value="<%= campground.name %> "> 
+
+
+<input type="text" name="campground[image]"  value="<%= campground.image %> ">
+
+<input type="text" name="campground[description]" value="<%= campground.description %> ">
+
+
+<button class="btn btn-primary btn-lg">Save</button>
+
+
+</form>
+
+
+</div>
+<a href="/campgrounds/<%= campground._id %>">Back</a>
+
+<%- include("../partials/footer.ejs") %>

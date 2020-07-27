@@ -1,0 +1,139 @@
+
+
+a{
+   text-decoration: none;
+   outline: none;
+   user-select: none;
+   color: black;
+   font-style:  cursive;
+   
+}
+a:link{
+    text-decoration: none;
+}
+
+#userName{
+    font-size: 25px;
+    text-decoration: none;
+}
+.a-btn{
+    font-size: 35px;
+    border-radius: initial;
+}
+
+.card-link{
+    font-size: 35px;
+    line-height: 45px;
+}
+ul.grt-menu li{
+    font-size: 25px;
+    font-weight: 600;
+    padding-left: 10px ;
+}
+.lead{
+    font-size: 35px;
+    font-weight: 600;
+}
+#deleteForm{
+    display: inline;
+}
+
+.card{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+.container{
+    margin-top: 20vh;
+    margin-bottom: 45px;
+
+}
+
+
+header{
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(85, 68, 68, 0.274);
+    box-shadow: 2px 2px 2px 1px rgba(56, 103, 117, 0.329);
+
+
+}
+.alertContainer{
+margin-top: 6em;
+
+}
+
+input[type="number"]{
+    display: block;
+    padding: 15px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    border: white;
+    border-radius: 6px;
+    box-shadow: 2px 2px 2px 1px rgba(29, 184, 231, 0.329);
+    width: 20%;
+    outline: 0;
+
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="submit"]{
+display: block;
+padding: 15px;
+margin: 0 auto;
+margin-bottom: 30px;
+border: white;
+border-radius: 6px;
+box-shadow: 2px 2px 2px 1px rgba(29, 184, 231, 0.329);
+width: 95%;
+outline: 0;
+}
+
+
+.addTitle{
+margin-bottom: 20px;
+
+}
+
+.container-1{
+    margin: 0 auto;
+}
+
+form{
+margin: 0 auto;
+
+}
+form button{
+
+    border-radius: 6px;
+    background-color: rgb(114, 114, 245);
+    color: white;
+    padding: 7px;
+    font-size: large;
+}
+
+.btn-success{
+    margin-bottom: 50px;
+}
+
+footer{
+    background-color: #e9ecef;
+}
+
+
+@media (min-width: 768px){
+
+    .imgSpot{
+        height: 500px;
+        width: 500px;
+    }
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="submit"]{
+    width: 70%;
+}
+}

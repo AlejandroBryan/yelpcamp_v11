@@ -1,0 +1,40 @@
+<%- include("../partials/header.ejs") %>
+
+<div class="container">
+    <% if (currentUser){%> 
+        <h1>Signed in as <%= currentUser.username %></h1>
+            <% } else{ %> 
+
+                
+            <% } %> 
+
+<div class="jumbotron">
+    <div class="container">
+    <h1>Welcome to YelpCamp!</h1>
+    <p>View our hand-picked campgrounds from all over the world.</p>
+    <p>
+        <a class="btn btn-primary btn-large" href="/campgrounds/new"> Add a new campgrounds!</a>
+        
+    </p>
+</div>
+</div>
+
+
+<div class="row text-center">
+    <% campgrounds.slice().reverse().forEach((campground)=>{ %>
+        <div class="col-md-3 col-sm-6">
+        <div class="card"> 
+                <img src="<%= campground.image %> " alt="" class="card-img-top">
+                 <div class="card-body">
+                
+                    <h4 class="card-title"><%= campground.name %> </h4>
+                    <a href="/campgrounds/<%= campground._id %> " class="btn btn-primary">More info...</a>
+                    </div>
+                </div>
+            </div>
+             
+        <% }) %> 
+    </div>
+</div>
+
+<%- include("../partials/footer.ejs") %>

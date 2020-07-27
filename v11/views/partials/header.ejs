@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en"> 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/menu.css">
+        <link rel="stylesheet" type="text/css" href="/css/materialise.css">
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+    </head>
+    <body>  
+    <header>
+       <div class="menu-container">
+           <div class="grt-menu-row">
+               <div class="grt-menu-logo">
+                <a class="card-link" href="/..">YelpCamp</a>
+               </div>
+                 <div class="grt-menu-right">
+                     <nav > 
+                        <button class="grt-mobile-button"><span class="line1"></span><span class="line2"></span><span class="line3"></span></button>   
+                       <ul class="grt-menu">
+                       <% if(!currentUser){ %>
+                          <li class="active"><a href="/login">Login</a></li>
+                          <li><a href="/register">Signup</a></li>
+                       <%  } else{ %> 
+                          <li><a href="/logout">Logout </a></li>
+                       <%} %>  
+                        </ul>
+                      </nav>
+                    </div>
+               </div>
+            </div> 
+    </header>
+
+    <div class="container alertContainer">
+      <% if(error &&error.length > 0){ %> 
+    <div class="alert alert-danger role=alert">
+      <%=error%>
+    </div>
+    <% } %> 
+    <% if(success && success.length > 0){ %>
+    <div class="alert alert-success role=alert">
+      <%=success%>
+    </div>
+    <% } %> 
+   </div>
+         
+      
+       
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,30 @@
+<%- include("../partials/header.ejs") %>
+<div class="container text-center">
+
+
+    <h1 class="addTitle text-center">Login</h1>
+    <hr>
+    
+    <form  action="/login" method="POST">
+    <div class="container"> 
+    <input class="borde-bottom" type="text" name="username" placeholder="Username" required> 
+    
+    <input type="password" name="password"  placeholder="Password" required>
+    
+    <input class="btn btn-primary btn-lg" type="submit" value="Login!">    
+    
+    </form>
+    
+    <p>If you haven't an account, please <a href="/register">Signup</a></p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+<%- include("../partials/footer.ejs") %>

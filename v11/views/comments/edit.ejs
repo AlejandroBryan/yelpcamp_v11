@@ -1,0 +1,22 @@
+
+<%- include("../partials/header.ejs") %> 
+
+
+
+<div class="container text-center">
+
+
+<h1 class="addTitle text-center">Edit campground </h1>
+
+
+<form  action="/campgrounds/<%=campground_id%>/comments/<%= comment._id %>/?_method=PUT" method="POST">
+<div class="container">
+<input type="text" name="comment[text]" value="<%= comment.text %> " > 
+<button class="btn btn-primary btn-lg">Save</button>
+</form>
+
+
+</div>
+<a href="/campgrounds/<%= campground_id %>">Back</a>
+
+<%- include("../partials/footer.ejs") %>
