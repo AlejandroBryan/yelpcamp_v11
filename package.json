@@ -2,10 +2,10 @@
   "name": "final",
   "version": "1.0.0",
   "description": "YelpCamp v11",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "start": "node app",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon ./node app"
   },
   "author": "alejandro bryan",
   "license": "ISC",
@@ -29,6 +29,7 @@
     "request": "^2.88.2"
   },
   "devDependencies": {
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.6"
   }
 }

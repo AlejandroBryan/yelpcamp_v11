@@ -12,9 +12,11 @@ const  express            = require('express'),
        seedDB             = require('./seeds'),
        app                = express(),
        port               = process.env.PORT || 3000
-
-      // configure dotenv
-       //require('dotenv').load();   
+       
+// configure dotenv 
+require('dotenv').config(); 
+      
+      
 //Requiring routes
 const commentRoutes       = require('./routes/comments'),
 	  campgroundRoutes    = require('./routes/campgrounds'),
