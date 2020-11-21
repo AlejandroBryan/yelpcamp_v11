@@ -23,7 +23,9 @@ const commentRoutes       = require('./routes/comments'),
 	  indexRoutes         = require('./routes/index')
 
 //Database
-mongoose.connect('mongodb://localhost:27017/campgrounds_v12',{
+const databaseUrl = process.env.MONGODB_URL || 'mongodb://localhost:27017/campgrounds';
+
+mongoose.connect(databaseUrl,{
 useNewUrlParser: true,
 useCreateIndex: true,	
 useUnifiedTopology: true,
